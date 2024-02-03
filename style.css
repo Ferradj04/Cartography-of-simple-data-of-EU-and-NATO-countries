@@ -1,0 +1,156 @@
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+:root 
+{
+    --nav-height: 50px;
+    --thread-height: 2px;
+    --screen-height:100vh;
+    --map-width:680px;
+    --white-space:30px;
+}
+#af_ 
+{
+    width:40px;
+    margin:auto;
+}
+body
+{
+    width:100vw;
+    display: Grid;
+    background-color: #e7e7e7;
+}
+.container
+{
+    width: 100%;
+    height: calc(var(--screen-height) - var(--nav-height) - var(--thread-height)) ;
+    display: flex;
+}
+#map_container
+{
+    margin: auto;
+    border-radius: 10px;
+    height: fit-content;
+}
+#svg3157
+{
+    border-radius: 10px;
+}
+.data-displayer 
+{
+    width:auto;
+    position:absolute;
+    margin-top:30px;
+    margin-left:30px;
+    background-color:transparent;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+li 
+{
+    font-size: 12pt;
+}
+.data-displayer > ul 
+{
+    list-style-type: none;
+    font-size: 10pt;
+}
+.flag 
+{
+    width:50px;
+}
+.nav-container
+{
+    width: 100%;
+    display: grid;
+}
+@keyframes animation-thread {
+  0%{
+    width:0%;
+  }
+  100%{
+    width:100%;
+  }
+}
+.nav 
+{
+    width:100%;
+    height: 50px;
+    background: linear-gradient(90deg, #0F1628 0%, #AB987A 100%); ;
+}
+.logo-container 
+{
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    display: flex;
+}
+.logo-container > p 
+ {
+    margin:auto;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.modes-container 
+{
+    position:absolute;
+    margin-top:30px;
+    margin-left:calc( var(--map-width) - 30px - 175px);
+    width:175px;
+    background-color:#000000;
+    z-index:1;
+    display: grid;
+}
+.category > button
+{
+    margin: auto;
+    width: 100%;
+    height: 30px;
+    border: 0;
+    background-color:#1d1d1d;
+    color:#FFFFFF;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.category > button:hover
+{
+    background-color: #FFFFFF;
+    color: black;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+.transition
+{
+    transition: all 0.25s ease;
+    background: linear-gradient(90deg, #004791 0%, #ffffff 100%); 
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ie-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.transition-eu 
+{
+    transition: all 0.25s ease;
+    background-image: linear-gradient(90deg, #001489 0%, #FFDD00 100%);
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ie-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.transition-usmb 
+{
+    transition: all 0.25s ease;
+    background-image: linear-gradient(90deg, #0A3161 0%, #B31942 100%);
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ie-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
